@@ -5,8 +5,10 @@
     font-family: 'Poppins', sans-serif;
     color: var(--black);
 }
+
 :root {
-    --green: #afaf;
+    --primary:rgb(68, 247, 68);
+    --second : rgb(8, 218, 8);
     --black: #4C4646;
     --blur : rgba(255, 255, 255, 0.4);
   }
@@ -52,7 +54,7 @@ body{
     font-weight: 500;
 }
 .menu li a:hover,.name:hover,.theme i:hover,.social-links a i:hover{
-    color: var(--green);
+    color: var(--second);
 }
 
 .menu-btn{
@@ -76,6 +78,9 @@ body{
     text-decoration: none;
     display: block;
 }
+.social-links a i{
+    font-size: 24px;
+}
 .home .profile-pic{
     max-width:300px;
     margin-right: auto;
@@ -83,7 +88,7 @@ body{
 .home .profile-pic img{
     border-radius:30px 0 30px 0;
     width: 100%;
-    background-color: var(--green);
+    background-color: var(--primary);
 }
 .home .title{
     padding: 20px;
@@ -99,7 +104,7 @@ body{
     margin-top: 30px ;
     display: block;
     text-decoration: none;
-    background-color: var(--green);
+    background-color: var(--primary);
     padding: 15px 20px;
     border-radius: 5px;
 }
@@ -107,7 +112,7 @@ body{
     display: inline;
 }
 .btn:hover{
-    background-color: rgb(105, 250, 105);
+    background-color: var(--second);
 }
 
 .cv-btn{
@@ -115,7 +120,7 @@ body{
     margin-top: 30px ;
     display: block;
     text-decoration: none;
-    background-color: var(--green);
+    background-color: var(--primary);
     padding: 15px 20px;
     border-radius: 5px;
 }
@@ -123,7 +128,7 @@ body{
     display: inline;
 }
 .cv-btn:hover{
-    background-color: rgb(105, 250, 105);
+    background-color: var(--second);
 }
 
 
@@ -198,6 +203,7 @@ body{
 
 .about{
     text-align: center;
+    margin: 20px auto;
 }
 .about .image img{
     border-radius: 4px;
@@ -219,6 +225,57 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
+/*Section Skill*/
+.allskill-container{
+ width: 100%;
+}
+
+.skillset-container{
+    width: 50%;
+    display: inline-block;
+}
+.skillset-container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.category{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.category div i{
+    color: var(--primary);
+    font-size: 24px;
+}
+.category .cat-text{
+    padding: 10px;
+}
+
+.skill-show{
+    width: 100%;
+}
+.skill-show .skill{
+    margin: 10px 0px;
+}
+.skill-title{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-bar{
+    height: 5px;
+    width: 100%;
+    background-color: var(--primary);
+}
+.skill-bar span{
+    display: block;
+    width: 90%;
+    height: 5px;
+    background-color:var(--second);
+}
+
 
 
 
