@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+}
+:root {
+    --green: #afaf;
+    --black: #4C4646;
+    --blur : rgba(255, 255, 255, 0.4);
+  }
+body{
+    background-color: white;
+}
+/*Navigation Bar*/
+.nav-bar{
+    padding: 20px 20%;
+    display: flex;
+    background-color: var(--blur);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.nav-bar::after{
+    display: unset;flex: none;
+}
+.nav-scroll{
+    box-shadow: 0 0 1px black;
+}
+.name{
+    transform: translateY(3px);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 500;
+}
+.menu{
+    list-style: none;
+    margin-left: auto;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    color: #a1a1a1;
+}
+.menu li a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 500;
+}
+.menu li a:hover,.name:hover,.theme i:hover,.social-links a i:hover{
+    color: var(--green);
+}
+
+.menu-btn{
+    display: none;
+}
+
+/*Section 01*/
+.main{
+    padding: 20px 20%;
+}
+.home{
+   margin-top: 70px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 70px;
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+}
+.social-links a{
+    text-decoration: none;
+    display: block;
+}
+.home .profile-pic{
+    max-width:300px;
+    margin-right: auto;
+}
+.home .profile-pic img{
+    border-radius:30px 0 30px 0;
+    width: 100%;
+    background-color: var(--green);
+}
+.home .title{
+    padding: 20px;
+    max-width: 500px;
+    min-width: none;
+}
+.title h1{
+    color: var(--black);
+    font-size: 48px;
+}
+.btn{
+    width: 150px;
+    margin-top: 30px ;
+    display: block;
+    text-decoration: none;
+    background-color: var(--green);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.btn i{
+    display: inline;
+}
+.btn:hover{
+    background-color: rgb(105, 250, 105);
+}
+
+.cv-btn{
+    width: 150px;
+    margin-top: 30px ;
+    display: block;
+    text-decoration: none;
+    background-color: var(--green);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.cv-btn i{
+    display: inline;
+}
+.cv-btn:hover{
+    background-color: rgb(105, 250, 105);
+}
+
+
+@media screen and (max-width:670px) {
+    .nav-bar{
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .name{
+        display: none;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-top: 20px;
+        background-color: var(--blur);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+    .menu li{
+        margin-left: unset;
+        display: block;
+    }
+    .theme{
+        position:absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .menu-btn{
+        display: inline-block;
+        position:absolute;
+        top: 10px;
+        right: 30px;
+    }
+
+
+}
+
+@media screen and (max-width:670px) {
+    .main{
+        padding: 20px 10%;
+    }
+    .home{
+        display: block;
+    }
+    .social-links{
+        width:100px;
+    }
+    .home .social-links a{
+        display: inline-block;
+    }
+    .home .title{
+        padding: none;
+    }
+
+    .detail-container{
+        display: unset !important;
+    }
+    .details{
+        width: 100% !important;
+    }
+    .cv-btn{
+        width: 100%;
+    }
+}
+
+/*Section About*/
+
+.about{
+    text-align: center;
+}
+.about .image img{
+    border-radius: 4px;
+    max-width: 250px;
+}
+.details{
+    padding: 10px;
+    width: 50%;
+}
+
+.detail-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.count-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
