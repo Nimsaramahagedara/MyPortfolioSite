@@ -28,3 +28,18 @@ function menu(){
          icon.setAttribute("class","fa-solid fa-bars menuico");
     }
  }
+
+ function show_skill(name, id){
+    var icon = document.getElementById(id);
+    var skillset = document.getElementById(name);
+    if(skillset.style.display == "none"){
+        console.log("true");
+        icon.className ="fa-solid fa-chevron-up";
+        skillset.style.display = "block";
+    }else{
+        console.log("flase");
+        icon.className = "fa-solid fa-chevron-down";
+        skillset.style.display = "none";
+    }
+    
+ }
