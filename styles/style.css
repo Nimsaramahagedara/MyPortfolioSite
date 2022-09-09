@@ -32,7 +32,14 @@
     --second : rgb(8, 218, 8);
     --black: #4C4646;
     --blur : rgba(255, 255, 255, 0.4);
-  }
+}
+@media (prefers-color-scheme: dark) {
+    --black: white;
+    --blur : rgba(32,30,30, 0.4);
+body{
+    background-color:#4C4646 ;
+}
+}
 body{
     background-color: white;
 }
