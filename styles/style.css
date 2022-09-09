@@ -33,17 +33,17 @@
     --black: #4C4646;
     --blur : rgba(255, 255, 255, 0.4);
 }
+body{
+    background-color: white;
+}
 @media (prefers-color-scheme: dark) {
 :root {
     --black: white;
     --blur : rgba(32,30,30, 0.4);
 }
-body{
-    background-color:#4C4646 ;
+body {
+    background-color: #4C4646 ;
 }
-}
-body{
-    background-color: white;
 }
 /*Navigation Bar*/
 .nav-bar{
