@@ -402,4 +402,15 @@ i{
     max-width: 200px;
 }
 
+@media screen and (max-width:451px) {
+    .project-ask{
+        display: block;
+        height: 370px;
+    }
+    .project-ask div img{
+        position: absolute;
+        right: 10px;
+    }
+}
+
 
