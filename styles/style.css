@@ -37,6 +37,9 @@
 body{
     background-color: white;
 }
+.main section{
+    margin-bottom: 50px;
+}
 @media (prefers-color-scheme: dark) {
 :root {
     --black: white;
@@ -311,7 +314,6 @@ body {
 }
 .skill-bar span{
     display: block;
-    width: 90%;
     height: 5px;
     background-color:var(--second);
 }
@@ -356,6 +358,8 @@ i{
         margin-bottom: 20px;
     }
 }
+
+/*POPUP*/
 .pop-up{
     position: fixed ;
     position: -webkit-sticky;
@@ -363,10 +367,11 @@ i{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .pop-up-container{
     width: 60%;
+    max-width: 400px;
     position: relative;
     background-color: var(--shadeBlack);
     border-radius: 5px;
@@ -390,13 +395,13 @@ i{
 
 .project-ask{
     display: flex;
-    left: 0px;
-    position:absolute;
+    position:relative;
     background-color: var(--primary);
     width: 100%;
     height: 220px;
     padding: 20px;
     overflow: hidden;
+    border-radius: 5px;
 }
 .project-ask div img{
     max-width: 200px;
@@ -410,6 +415,12 @@ i{
     .project-ask div img{
         position: absolute;
         right: 10px;
+    }
+}
+@media screen and (max-width:740px) {
+    .project-ask{
+        position:absolute;
+        left: 0;
     }
 }
 
