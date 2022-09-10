@@ -1,17 +1,22 @@
+
+
 function changeTheme(){
     const icon = document.getElementById("theme");
     const body = document.getElementsByTagName("body")[0];
     if (icon.className == "fa-regular fa-sun"){
+        /*Light Theme*/
         icon.className = "fa-solid fa-moon";
         body.style.background = "white";
         document.documentElement.style.setProperty('--black', '#4C4646');
         document.documentElement.style.setProperty('--blur', 'rgba(255, 255, 255, 0.4)');
+        document.documentElement.style.setProperty('--shadeBlack', 'white');
         
     }else{
+        /*Dark Theme*/
         icon.className = "fa-regular fa-sun";
         body.style.background = "#4C4646";
         document.documentElement.style.setProperty('--black', 'white');
-        
+        document.documentElement.style.setProperty('--shadeBlack', '#665353');
         document.documentElement.style.setProperty('--blur', 'rgba(32,30,30, 0.4)');
     }
 }
@@ -40,6 +45,15 @@ function menu(){
         console.log("flase");
         icon.className = "fa-solid fa-chevron-down";
         skillset.style.display = "none";
+    }
+    
+ }
+
+ function display_toggle(id){
+    if(document.getElementById(id).style.display == "none"){
+        document.getElementById(id).style.display = "block";
+    }else{
+        document.getElementById(id).style.display = "none";
     }
     
  }

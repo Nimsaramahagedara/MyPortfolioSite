@@ -207,13 +207,70 @@
         <section class="about">
             <h1>Service</h1>
             <h3>What I offer</h3>
-            <div class="detail-container">
-
+            <div class="detail-container service-container">
+                <div class="box">
+                        <div>
+                            <i class="fa-solid fa-display"></i>
+                        </div>
+                        <div class="cat-text">
+                            <h3>Front-End Development</h3>
+                        </div>
+                        <p id="view-more" onclick="display_toggle('pop-up')">View More</p>
+                </div>
+                <div class="box">
+                    <div>
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <div class="cat-text">
+                        <h3>Back-End Development</h3>
+                    </div>
+                    <p id="view-more" onclick="display_toggle('pop-up')">View More</p>
+                </div>
+                <div class="box">
+                    <div>
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <div class="cat-text">
+                        <h3>Database Management</h3>
+                    </div>
+                    <p id="view-more" onclick="display_toggle('pop-up')" >View More</p>
+                </div>
                 
+            </div>
+        </section>
+        <section class="project-ask">
+            <div>
+                <h3>You Have A Project?</h3>
+                <p>Contact me now and get a 10% discount on your project.</p>
+                <a href="tel:0763355762" class="btn" style="background-color: green ;">Contact Now</a>
+            </div>
+            <div>
+                <img src="images/offer-girl.png" alt="">
             </div>
         </section>
 
     </main>
-    
+    <div class="pop-up" id="pop-up" style="display:none;">
+        <div class="pop-up-container">
+            <div class="pop-up-title">
+            <h2>Ability</h2>
+            <i class="fa-solid fa-xmark" onclick="display_toggle('pop-up')"></i>
+            </div>
+            <ul>
+                <li>Using high level Architecture</li>
+                <li>Using oop concepts</li>
+                <li>Using high level Design Pattern</li>
+            </ul>
+        </div> 
+    </div>
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            // dark mode
+            var theme =document.getElementById("theme");
+            theme.className = "fa-regular fa-sun";
+        }else{
+            document.getElementById("theme").className = "fa-solid fa-moon";
+        }
+    </script>
 </body>
 </html>
