@@ -1,4 +1,9 @@
-
+ /*SCROLL FUNCTION*/
+ function smoothScrollToId(id){
+    document.querySelector('#'+id).scrollIntoView({
+    behavior: 'smooth'
+});
+}
 
 function changeTheme(){
     const icon = document.getElementById("theme");
