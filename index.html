@@ -14,6 +14,14 @@
     <title>Nimsara | Full Stack Developer</title>
 </head>
 <body>
+    <div id="preload">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div> 
+    </div>
     <header class="nav-bar nav-scroll">
         <a href="https://www.linkedin.com/in/nimsara-mahagedara/" class="name" target="_blank">Nimsara</a>
         <ul class="menu">
@@ -298,7 +306,7 @@
             <div>
                 <h3>You Have A Project?</h3>
                 <p>Contact me now and get a 10% discount on your project.</p>
-                <a href="tel:0763355762" class="btn" style="background-color: green ; color: white;">Contact Now</a>
+                <a href="tel:0763355762" class="btn" style="background-color: var(--second);">Contact Now</a>
             </div>
             <div>
                 <img src="images/offer-girl.png" alt="">
@@ -345,6 +353,13 @@
             backSpeed: 100,
             loop: true
         });
+    </script>
+    <script>
+        const preloader = document.getElementById("preload");
+
+        window.addEventListener("load", ()=>{
+            preloader.style.display = "none";
+        })
     </script>
 </body>
 </html>
