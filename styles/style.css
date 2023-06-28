@@ -38,6 +38,14 @@ div#preload {
     transform: rotateZ(45deg);
 }
 
+@media screen and (max-width:670px) {
+    .sk-folding-cube {
+        margin: 0px;
+        top: 40%;
+        left: 40%;
+    }
+}
+
 .sk-folding-cube .sk-cube {
     float: left;
     width: 50%;
