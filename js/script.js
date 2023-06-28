@@ -28,11 +28,11 @@ function menu(){
     const nav =  document.getElementsByClassName("menu")[0];
     var icon = document.getElementById('icon');
  
-    if(nav.style.display == "none"){
+    if(nav.style.height == "0px" || nav.style.height == "" ){
          icon.setAttribute("class","fa-solid fa-bars-staggered menuico");
-         nav.style.display = "block";
+         nav.style.height = "150px";
     }else{
-         nav.style.display = "none";
+         nav.style.height = "0px";
          icon.setAttribute("class","fa-solid fa-bars menuico");
     }
  }
@@ -40,23 +40,24 @@ function menu(){
  function show_skill(name, id){
     var icon = document.getElementById(id);
     var skillset = document.getElementById(name);
-    if(skillset.style.display == "none"){
+    if(skillset.style.height == "0px" || skillset.style.height == "" ){
         console.log("true");
-        icon.className ="fa-solid fa-chevron-up";
-        skillset.style.display = "block";
+        icon.style.rotate = "180deg";
+        skillset.style.height = "200px";
     }else{
         console.log("flase");
-        icon.className = "fa-solid fa-chevron-down";
-        skillset.style.display = "none";
+        icon.style.rotate = "0deg";
+        skillset.style.height = "0px";
     }
     
  }
 
  function display_toggle(id){
-    if(document.getElementById(id).style.display == "none"){
-        document.getElementById(id).style.display = "block";
+    const element = document.getElementById(id);
+    if(element.style.visibility == "hidden" || element.style.visibility == ""){
+        element.style.visibility = "visible";
     }else{
-        document.getElementById(id).style.display = "none";
+        element.style.visibility = "hidden";
     }
     
  }

@@ -146,6 +146,7 @@ body {
 }
 /*Navigation Bar*/
 .nav-bar{
+    z-index: 1;
     padding: 20px 20%;
     display: flex;
     background-color: var(--blur);
@@ -277,11 +278,13 @@ body {
         display: none;
     }
     .menu{
-        display: none;
         position: absolute;
         left: 0;
         width: 100%;
         margin-top: 20px;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
         background-color: var(--blur);
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
@@ -391,6 +394,7 @@ body {
 .category div i{
     color: var(--primary);
     font-size: 24px;
+    transition: all 0.3s ease-in-out;
 }
 .category .cat-text{
     padding: 10px;
@@ -398,6 +402,9 @@ body {
 
 .skill-show{
     width: 100%;
+    transition: all 0.5s ease-in-out;
+    height: 0px;
+    overflow: hidden;
 }
 .skill-show .skill{
     margin: 10px 0px;
